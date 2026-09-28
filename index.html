@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Clipper — a personal video publishing utility</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{color-scheme:light dark;--fg:#1a1a1a;--mut:#5f5f5f;--bg:#fbfaf8;--line:#e2e0db;--acc:#2f6f4f}
+@media(prefers-color-scheme:dark){:root{--fg:#ececec;--mut:#9a9a9a;--bg:#131313;--line:#2c2c2c;--acc:#7fc4a0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:660px;margin:0 auto;padding:64px 24px 96px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.01em}
+.tag{color:var(--mut);font-size:15px;margin:0 0 40px}
+h2{font-size:15px;margin:36px 0 10px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut)}
+p{margin:0 0 14px}
+ul{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:7px}
+a{color:var(--acc)}
+footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);
+  color:var(--mut);font-size:14px}
+</style>
+<div class="wrap">
+  <h1>Clipper</h1>
+  <p class="tag">A personal utility for publishing short video clips.</p>
+
+  <h2>What it is</h2>
+  <p>Clipper is a single-operator tool that runs on its owner's own computer. It
+  prepares short vertical video clips and publishes them to social accounts that
+  the operator personally owns and controls.</p>
+
+  <h2>Who can use it</h2>
+  <p>Nobody else. It is not a product, not a service, and has no users beyond its
+  author. It is not distributed, sold, or offered to the public. It authenticates
+  to exactly one account: its operator's own.</p>
+
+  <h2>What it does with Google APIs</h2>
+  <p>It uses the YouTube Data API for one purpose: uploading a video file to the
+  operator's own YouTube channel. It requests a single scope,
+  <code>youtube.upload</code>, which permits uploading and nothing else. It cannot
+  read the channel, its analytics, its comments, or its subscribers.</p>
+
+  <h2>Data</h2>
+  <p>It collects no data from anyone. It has no visitors, no accounts, no
+  database, and no analytics. See the <a href="./privacy.html">privacy
+  policy</a>.</p>
+
+  <footer>
+    <a href="./privacy.html">Privacy policy</a>
+  </footer>
+</div>
+</html>
